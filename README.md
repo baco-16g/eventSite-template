@@ -1,14 +1,13 @@
-# bacoDev-static
+# eventSite-template
 
-静的サイトとかの生成に使用するboilerplateです。
-reactとかvueとか使うほどでもない、って時に使います。
+個人受注で請け負っているイベントサイト類のレイアウトは、だいたい似通っているのでテンプレートを作成した。(wip)
 
 ## Get started
 
 ```bash
-$ git clone git@github.com:baco-16g/bacoDev-static.git
+$ git clone git@github.com:baco-16g/eventSite-template.git
 
-$ cd bacoDev-static
+$ cd eventSite-template
 $ npm install
 ```
 
@@ -17,4 +16,20 @@ $ npm install
 $ npm run start # to develop
 # Server running at: http://localhost:3000
 
+```
+
+jsonでコンテンツを管理したい場合は...
+
+```json
+// json/data.json
+
+{
+  "title": "ここにタイトル"
+}
+```
+```html
+// .pug
+
+- var title = data.data.title;
+h1 #{title}
 ```
