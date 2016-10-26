@@ -1,0 +1,14 @@
+- var gNavList = data.data.layouts.header.nav.gNav;
+- var home = data.data.pages.home;
+
+.l-home
+	.l-home__mv
+		a(href="#")
+			img(src=home.mv.src alt="")
+	ul.l-home__nav.c-flex.c-flex--between
+		each gNav in gNavList
+			li.l-home__navItem
+				a(href=gNav.href).c-flexCentering.c-flexCentering--column
+					span.l-home__navItem__ttl.l-home__navItem__ttl--Jp #{gNav.titleJp}
+					span.l-home__navItem__ttl.l-home__navItem__ttl--En #{gNav.titleEn}
+					span.l-home__navItem__triangle

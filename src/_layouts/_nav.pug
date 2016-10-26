@@ -1,0 +1,10 @@
+- var gNavList = data.data.layouts.header.nav.gNav;
+
+nav
+	.l-nav
+		ul.c-flexRow.c-flexRow--end
+			li.l-nav__gLogo
+				a(href="#") ロゴ
+			each gNav in gNavList
+				li.l-nav__gNav
+					a(href=gNav.href) #{gNav.titleJp}
